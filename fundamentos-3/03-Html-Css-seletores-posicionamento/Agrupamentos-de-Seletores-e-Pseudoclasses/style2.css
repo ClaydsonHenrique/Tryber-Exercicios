@@ -23,3 +23,7 @@ div :hover{
 .h3{
     font-size: 30px;
 }
+div:nth-child( odd ) {
+font-style: italic;
+
+}
