@@ -1,3 +1,7 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 div :hover{
     border: 3px solid rgb(161, 160, 160);
 }
@@ -20,4 +24,5 @@ div:nth-child(7){
 
 div:nth-child( odd ) {
 font-style: italic;
+
 }
