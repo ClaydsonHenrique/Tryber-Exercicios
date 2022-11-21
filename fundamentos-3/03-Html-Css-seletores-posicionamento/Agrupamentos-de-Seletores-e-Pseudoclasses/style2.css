@@ -16,7 +16,10 @@ div :hover{
     color:rgb(34, 33, 33);
 }
 
-#cor-clara{
+.cor-clara{
     color: rgb(105, 105, 104);
 }
 
+.h3{
+    font-size: 30px;
+}
