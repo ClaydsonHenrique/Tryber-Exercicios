@@ -1,12 +1,23 @@
 h1, p{
 text-align: center;
 }
+li{
+    margin-bottom: 10px;
+}
 
 ol:hover{
     background-color: rgb(209, 208, 208);
 }
+ol li:active{
+    font-size: 25px;
+}
 
-
+ul:hover{
+    background-color: rgb(209, 208, 208);
+}
+ul li:active{
+    font-size: 25px;
+}
 
 
 ul , ol{
