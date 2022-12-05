@@ -27,3 +27,23 @@ const dividendo2 = 30;
 const divisor2 = 2;
 const resultado = 30 % 2;
 console.log(resultado);
+
+// Resultado correto (gabarito)
+
+const a = 15;
+const b = 5;
+console.log('Soma: ' + (a + b));
+console.log('Subtração: ' + (a - b));
+console.log('Multiplicação: ' + (a * b));
+console.log('Divisão: ' + (a / b));
+console.log('Módulo: ' + (a % b));
+
+
+// comparação 
+// const primeiro = 50;
+// const segundo =10;
+// if (){
+
+// }
+
+
