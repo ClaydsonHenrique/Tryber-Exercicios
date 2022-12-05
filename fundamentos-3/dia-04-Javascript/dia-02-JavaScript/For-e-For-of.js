@@ -13,3 +13,4 @@ for (index of names){
   index +=1;
   console.log(index)
 }
+
