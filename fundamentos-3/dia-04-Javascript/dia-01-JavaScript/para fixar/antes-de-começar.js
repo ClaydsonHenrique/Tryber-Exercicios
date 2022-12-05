@@ -28,15 +28,15 @@ const divisor2 = 2;
 const resultado = 30 % 2;
 console.log(resultado);
 
-// // Resultado correto (gabarito)
+// // Resultado  (gabarito)
 
-const a = 15;
-const b = 5;
-console.log('Soma: ' + (a + b));
-console.log('Subtração: ' + (a - b));
-console.log('Multiplicação: ' + (a * b));
-console.log('Divisão: ' + (a / b));
-console.log('Módulo: ' + (a % b));
+// const a = 15;
+// const b = 5;
+// console.log('Soma: ' + (a + b));
+// console.log('Subtração: ' + (a - b));
+// console.log('Multiplicação: ' + (a * b));
+// console.log('Divisão: ' + (a / b));
+// console.log('Módulo: ' + (a % b));
 
 
 // comparação 
@@ -104,3 +104,14 @@ const num3 = 9;
  }else{
   console.log(false);
  }
+
+ 
+ const num4 = 4;
+ const num5 = 3;
+ const num6 = 6;
+  if ( num4 % 2 === 1 || num5 % 2 === 1 || num6 % 2 == 1){
+   console.log(true);
+  }else{
+   console.log(false);
+  }
+ 
