@@ -22,3 +22,22 @@ if (aritimetica > 20 ){
 } else{
   console.log("valor menor que 20.");
 }
+
+// Utilizando for, descubra qual o maior valor contido no array e imprima-o;
+let maiorValor = numbers[0];
+ for (index = 0; index < numbers.length ;  index += 1) {
+  if (numbers[index] > maiorValor) {
+    maiorValor = numbers[index]
+  }
+ }
+ console.log(maiorValor)
+
+//  Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
+for (index = 0; index < numbers.length ;  index += 1){
+  if (numbers[index] % 2 === 1){
+    console.log(numbers[index]);
+  }else {
+    console.log('Nenhum valor ímpar encontrado');
+   }
+ }
+
