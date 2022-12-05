@@ -40,10 +40,12 @@ console.log('Módulo: ' + (a % b));
 
 
 // comparação 
-// const primeiro = 50;
-// const segundo =10;
-// if (){
-
-// }
+const primeiro = 50;
+const segundo =10;
+if (primeiro > segundo){
+  console.log("Primeiro é maior que Segundo")
+}else {
+  console.log("Segundo é maior que Primeiro")
+}
 
 
