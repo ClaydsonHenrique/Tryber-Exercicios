@@ -96,6 +96,9 @@
 
 
 // // 🚀 Há um par entre nós 
+
+// bonus 1 
+
 // const num1 = 3;
 // const num2 = 7;
 // const num3 = 9;
@@ -105,6 +108,8 @@
 //   console.log(false);
 //  }
 
+//  bonuns 2
+
 //  const num4 = 4;
 //  const num5 = 3;
 //  const num6 = 6;
@@ -113,17 +118,60 @@
 //   }else{
 //    console.log(false);
 //   }
- 
 
-  const valorDoProduto = 30;
-  const valorDeVenda = -3;
+// bonus 3 
 
-  if (valorDoProduto >= 0 && valorDeVenda >= 0) {
-    const valorDoImposto = valorDoProduto * 0.2;
-    const lucro = valorDeVenda - valorDoProduto - valorDoImposto;
-    const vendas = lucro * 1000;
-    console.log(vendas);
-  } else{
-    console.log("Erro, valor abaixo de 0");
+  // const valorDoProduto = 30;
+  // const valorDeVenda = -3;
+
+  // if (valorDoProduto >= 0 && valorDeVenda >= 0) {
+  //   const valorDoImposto = valorDoProduto * 0.2;
+  //   const lucro = valorDeVenda - valorDoProduto - valorDoImposto;
+  //   const vendas = lucro * 1000;
+  //   console.log(vendas);
+  // } else{
+  //   console.log("Erro, valor abaixo de 0");
+  // }
+
+  // bonus 4
+  let inss;
+  let impostoDeRenda;
+
+  const salarioLiquido = 3300.00;
+
+  if (salarioLiquido <= 1556.94){
+    inss =salarioLiquido * 0.08;
+    // console.log(inss);
+  } else  if (salarioLiquido >=1556.95 && salarioLiquido <= 2594.92){
+    inss = salarioLiquido * 0.09;
+    // console.log(inss);
+  }else  if (salarioLiquido >= 2594.93 && salarioLiquido <= 5189.82){
+    inss = salarioLiquido * 0.11;
+    // console.log(inss);
+  } else {
+    inss = 570.88;
+    // console.log(inss);
   }
+
+  let salarioBase = salarioLiquido-inss;
   
+  
+
+  if (salarioBase <= 1903.98){
+    console.log('Insento de imposto de renda');
+  } else if (salarioBase >= 1903.99 && salarioBase <= 2826.65){
+    impostoDeRenda = (salarioBase *0.075 ) -142.80;
+  }else if (salarioBase >=  2826.66 && salarioBase <= 3751.05){
+    impostoDeRenda = (salarioBase * 0.15) -354.8;
+  }else if (salarioBase >=  3751.06 && salarioBase <= 4664.68){
+    impostoDeRenda = (salarioBase * 0.225) -636.16;
+  }else if (salarioBase >= 4664.68){
+    impostoDeRenda = (salarioBase * 0.275) -8669.36;
+  }
+  // console.log(salarioBase)
+  // console.log(impostoDeRenda)
+
+  const resultadoFinal = salarioBase-impostoDeRenda;
+  console.log(resultadoFinal);
+
+
