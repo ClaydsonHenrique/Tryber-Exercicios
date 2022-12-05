@@ -1,12 +1,12 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // Percorra o array imprimindo todos os valores nele contidos com a função console.log();
-for ( index=0; index < numbers.length; index += 1){
+for ( let index=0; index < numbers.length; index += 1){
   // console.log(numbers[index])
 }
 
 // Some todos os valores contidos no array e imprima o resultado;
 let soma= 0;
-for ( index=0; index < numbers.length; index += 1){
+for ( let index=0; index < numbers.length; index += 1){
   soma += numbers[index];
 }
 // console.log(soma)
@@ -33,11 +33,22 @@ let maiorValor = numbers[0];
  console.log(maiorValor)
 
 //  Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
-for (index = 0; index < numbers.length ;  index += 1){
+for (let index = 0; index < numbers.length; index += 1){
   if (numbers[index] % 2 === 1){
     console.log(numbers[index]);
-  }else {
-    console.log('Nenhum valor ímpar encontrado');
-   }
+  } else if (numbers[index] = 0){
+    console.log('nenhum valor ímpar encontrado');
+  }
  }
+
+//  Utilizando for, descubra qual o menor valor contido no array e imprima-o;
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let menorValor = numbers[0];
+
+for (let index = 1; index < numbers.length; index += 1 ) {
+  if (numbers[index] < menorValor ) {
+    menorValor = numbers[index];
+  }
+}
+console.log(menorValor);
 
