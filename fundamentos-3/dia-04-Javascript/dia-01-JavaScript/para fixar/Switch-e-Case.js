@@ -6,5 +6,7 @@ switch (resultado) {
 case 'lista':
   console.log('Você está na nossa lista de espera');
   break;
-
+case 'reprovade':
+  console.log("Você foi reprovado");
+  break;
 }
