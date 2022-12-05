@@ -30,14 +30,14 @@ let maiorValor = numbers[0];
     maiorValor = numbers[index]
   }
  }
- console.log(maiorValor)
+//  console.log(maiorValor)
 
 //  Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
 for (let index = 0; index < numbers.length; index += 1){
   if (numbers[index] % 2 === 1){
-    console.log(numbers[index]);
+    // console.log(numbers[index]);
   } else if (numbers[index] = 0){
-    console.log('nenhum valor ímpar encontrado');
+    // console.log('nenhum valor ímpar encontrado');
   }
  }
 
@@ -50,5 +50,16 @@ for (let index = 1; index < numbers.length; index += 1 ) {
     menorValor = numbers[index];
   }
 }
-console.log(menorValor);
+// console.log(menorValor);
 
+// Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
+let num =[];
+for (let index = 0; index < 26; index += 1 ){
+  num.push (index)
+}
+console.log(num)
+
+// Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
+for (let index = 0; index < num.length; index += 1){
+console.log(num[index] / 2)
+  }
