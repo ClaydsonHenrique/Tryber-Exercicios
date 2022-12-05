@@ -59,3 +59,12 @@ if (primeiro > segundo && primeiro > terceiro){
   console.log("Terceiro é maior que Primeiro e do que o Segundo");
 }
 
+const valor = 13;
+if (valor > 0){
+  console.log("positive")
+} else if (valor < 0){
+  console.log('negative')
+}else {
+  console.log("zero")
+}
+
