@@ -16,7 +16,7 @@ for (index = 0; index < word.length; index += 1) {
 
 console.log(reverso)
 
-// Imprimindo Maior palavra e Menor palavra
+// Imprimindo Maior palavra e Menor palavra / gabarito
 
 let array = ['java', 'javascript', 'python', 'html', 'css'];
 let maior = array[0];
@@ -34,7 +34,7 @@ for (let index = 0; index < array.length; index += 1) {
 console.log(maior);
 console.log(menor);
 
-// numero primos
+// numero primos / gabarito
 let numeros = 0;
 
 for (let index = 2; index <= 50; index += 1) {
