@@ -1,4 +1,11 @@
+// fatorial
+let result = 1;
 
+for (let index = 10; index > 0; index -= 1) {
+  result *= index;
+}
+
+console.log(result)
 
 // Invertendo string 
 let word = 'tryber';
