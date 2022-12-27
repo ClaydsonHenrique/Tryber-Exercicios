@@ -65,23 +65,23 @@ for (let index = 0; index <= meio; index += 1) {
 
 // quinto requisito 
 
-n = 7;
-symbol = '*';
-let middle = (n + 1) / 2;
-let controlLeft = middle;
-let controlRight = middle;
-for (let line = 1; line <= middle; line += 1) {
-  let outputLine = '';
-  for (let col = 1; col <= n; col += 1) {
-    if (col == controlLeft || col == controlRight || line == middle) {
-      outputLine += symbol;
+numero = 7;
+simbolo = '*';
+meio = (numero + 1) / 2;
+esquerda = meio;
+direita = meio;
+
+for (let index = 0; index <= meio; index += 1) {
+  let espaco = '';
+  for (let i = 0; i <= numero; i += 1) {
+    if (i == esquerda || i == direita || index == meio) {
+      espaco += simbolo;
     } else {
-      outputLine += ' ';
-    }
-  }
-  controlLeft -= 1;
-  controlRight += 1;
-  console.log(outputLine);
-}
+      espaco += ' ';
+    };
+  };
 
-
+  direita += 1;
+  esquerda -= 1;
+  console.log(espaco);
+};
