@@ -11,56 +11,77 @@ for (let index = 0; index < numero; index += 1) {
 
 // segundo requisito 
 
-let number = 5;
-let symbol = '*';
-let line = '';
+numero = 5;
+simbolo = '*';
+linha = '';
 
-for (index = 0; index <= number; index += 1) {
-  console.log(line);
-  line = line + symbol;
+for (index = 0; index <= numero; index += 1) {
+  console.log(linha);
+  linha = linha + simbolo;
 }
 
 // terceiro requisito
 
-let n = 5;
-let resultado = '*';
-let novaLinha = '';
-let position = n;
+numero = 5;
+simbolo = '*';
+linha = '';
+position = numero;
 
-for (let index = 0; index <= n; index += 1) {
-  for (let i = 0; i < n; i += 1) {
+for (let index = 0; index <= numero; index += 1) {
+  for (let i = 0; i < numero; i += 1) {
     if (i < position) {
-      novaLinha = novaLinha + ' ';
+      linha = linha + ' ';
     } else {
-      novaLinha = novaLinha + resultado;
+      linha = linha + simbolo;
     }
   }
-  console.log(novaLinha);
-  novaLinha = '';
+  console.log(linha);
+  linha = '';
   position -= 1;
 }
 
 // quarto requisito 
-let quantidade = 5;
-let caractere = '*';
-let novasLinhas = '';
+numero = 5;
+simbolo = '*';
+linha = '';
 
-let meio = (quantidade + 1) / 2;
+let meio = (numero + 1) / 2;
 let esquerda = meio;
 let direita = meio;
 
 for (let index = 0; index <= meio; index += 1) {
-  for (let i = 0; i <= quantidade; i += 1) {
+  for (let i = 0; i <= numero; i += 1) {
     if (i > esquerda && i < direita) {
-      novasLinhas = novasLinhas + caractere;
+      linha = linha + simbolo;
     } else {
-      novasLinhas = novasLinhas + ' ';
+      linha = linha + ' ';
     };
   };
-  console.log(novasLinhas);
-  novasLinhas = '';
+  console.log(linha);
+  linha = '';
   direita += 1;
   esquerda -= 1;
 };
+
+// quinto requisito 
+
+n = 7;
+symbol = '*';
+let middle = (n + 1) / 2;
+let controlLeft = middle;
+let controlRight = middle;
+for (let line = 1; line <= middle; line += 1) {
+  let outputLine = '';
+  for (let col = 1; col <= n; col += 1) {
+    if (col == controlLeft || col == controlRight || line == middle) {
+      outputLine += symbol;
+    } else {
+      outputLine += ' ';
+    }
+  }
+  controlLeft -= 1;
+  controlRight += 1;
+  console.log(outputLine);
+}
 
 
