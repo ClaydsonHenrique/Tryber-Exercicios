@@ -85,3 +85,18 @@ for (let index = 0; index <= meio; index += 1) {
   esquerda -= 1;
   console.log(espaco);
 };
+
+// sexto requisito 
+let divisor = 1;
+let numeros = 31;
+
+for (let index = 2; index < numeros; index += 1) {
+  if (numeros % index === 0) {
+    divisor += 1;
+  }
+}
+if (divisor === 2) {
+  console.log(numeros + 'é primo');
+} else {
+  console.log(numeros + " não é primo")
+}
