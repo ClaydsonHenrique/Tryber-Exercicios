@@ -77,8 +77,9 @@ const idade = () => {
 }
 
 //  Faça uma função que retorne os nomes dos livros, dado o ano de nascimento das pessoas autoras.
-const booksByAuthorBirthYear = () => {
-  const livros = books.filter((book) => book.author.birthYear);
+const booksByAuthorBirthYear = (anoAniversario) => {
+  const livros = books.filter((book) => book.author.birthYear === anoAniversario)
+    .map((book) => book.name);
   return livros
 }
-console.log(booksByAuthorBirthYear())
+console.log(booksByAuthorBirthYear(1920))
