@@ -62,8 +62,23 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+//  Filtre todos os objetos do gênero ficção científica ou fantasia.
 const fantasyOrScienceFiction = () => {
-  let filmes = books.filter((filme) => filme.genre === 'Fantasia' || filme.genre === 'Ficção Científica');
-  return filmes
+  const livros = books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
+  return livros
 }
-console.log(fantasyOrScienceFiction())
+
+//  Filtre os livros com mais de 60 anos desde sua publicação e ordene a partir do livro mais velho para o mais novo.
+const idade = () => {
+  const ano = 2023;
+  const livros = books.filter((book) => (ano - book.releaseYear) >= 60);
+  return livros
+}
+
+//  Faça uma função que retorne os nomes dos livros, dado o ano de nascimento das pessoas autoras.
+const booksByAuthorBirthYear = () => {
+  const livros = books.filter((book) => book.author.birthYear);
+  return livros
+}
+console.log(booksByAuthorBirthYear())
