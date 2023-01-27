@@ -97,5 +97,16 @@ const livrosVelhos = () => {
   const livros = books.filter((book) => (ano - book.releaseYear) >= 60).map((book) => book.name);
   return livros
 }
+
+// Encontre o primeiro resultado cujo nome registrado começa com três iniciais e retorne o nome do livro.(Não resolvido!)
+const expectedResult = 'O Senhor dos Anéis';
+
+const authorWith3DotsOnName = () => {
+  return books.find((book) => (
+    book.author.name.split(' ')
+      .filter((word) => word.endsWith('.')).length === 3
+  )).name;
+}
+
 console.log(livrosVelhos())
 
