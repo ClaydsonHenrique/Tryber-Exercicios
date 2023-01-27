@@ -108,5 +108,3 @@ const authorWith3DotsOnName = () => {
   )).name;
 }
 
-console.log(livrosVelhos())
-
