@@ -82,4 +82,20 @@ const booksByAuthorBirthYear = (anoAniversario) => {
     .map((book) => book.name);
   return livros
 }
-console.log(booksByAuthorBirthYear(1920))
+
+// Crie um array que possua apenas os nomes de todas as pessoas autoras de ficção científica ou fantasia e ordene por ordem alfabética.
+const fantasyOrScienceFictionAuthors = () => {
+  const genero = ['Fantasia', 'Ficção Científica']
+  const nomes = books.filter((book) => genero.includes(book.genre));
+  nomes.map((book) => book.author.name).sort()
+  return nomes
+};
+
+// Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
+const livrosVelhos = () => {
+  const ano = 2023;
+  const livros = books.filter((book) => (ano - book.releaseYear) >= 60).map((book) => book.name);
+  return livros
+}
+console.log(livrosVelhos())
+
